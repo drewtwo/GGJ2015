@@ -1,12 +1,14 @@
 var task = {
 	currentInstructions:"",
 	currentMessage:"",
+	messageCount:"",
     initialize: function() {
 		var level = 0;
 		currentMessageIndex = 0;
 		$.getJSON("json/tasks.json", function(taskJson) {
-			var messageCount = Object.keys(taskJson[level].instructions).length - 1;
-			currentInstructions = taskJson[level].instructions[task.getRandomInt(0,messageCount)];
+			var instructionsCount = Object.keys(taskJson[level].instructions).length - 1;
+			currentInstructions = taskJson[level].instructions[task.getRandomInt(0,instructionsCount)];
+			messageCount = Object.keys(currentInstructions.messages).length - 1;
 			var currentMessage = currentInstructions.messages[currentMessageIndex];
 			$("div#task_field").html(currentMessage);
 		});
@@ -16,8 +18,12 @@ var task = {
 	},
 	nextTask: function() {
 		currentMessageIndex++;
-		var currentMessage = currentInstructions.messages[currentMessageIndex];
-		$("div#task_field").html(currentMessage);
+		if (currentMessageIndex > messageCount) {
+			window.location = "interactionRecorder.html";
+		} else {
+			var currentMessage = currentInstructions.messages[currentMessageIndex];
+			$("div#task_field").html(currentMessage);
+		}
 	},
 	endTasks: function() {
 		window.location = "index.html";
