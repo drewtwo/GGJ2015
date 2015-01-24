@@ -3,19 +3,21 @@ var task = {
 	currentMessage:"",
     initialize: function() {
 		var level = 0;
-		currentMessage = 0;
+		currentMessageIndex = 0;
 		$.getJSON("json/tasks.json", function(taskJson) {
-			var messageCount = Object.keys(taskJson[level].instructions).length;
+			var messageCount = Object.keys(taskJson[level].instructions).length - 1;
 			currentInstructions = taskJson[level].instructions[task.getRandomInt(0,messageCount)];
-			$("div#task_field").text(currentInstructions.messages[currentMessage]);
+			var currentMessage = currentInstructions.messages[currentMessageIndex];
+			$("div#task_field").html(currentMessage);
 		});
 	},
 	getRandomInt: function(min, max) {
 	  return Math.floor(Math.random() * (max - min + 1)) + min;
 	},
 	nextTask: function() {
-		currentMessage++;
-		$("div#task_field").text(currentInstructions.messages[currentMessage]);
+		currentMessageIndex++;
+		var currentMessage = currentInstructions.messages[currentMessageIndex];
+		$("div#task_field").html(currentMessage);
 	},
 	endTasks: function() {
 		window.location = "index.html";

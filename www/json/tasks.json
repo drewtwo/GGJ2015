@@ -3,7 +3,7 @@
         "instructions": [
             {
                 "messages": [
-                    "Touch a brick wall with one finger.",
+                    "Touch a brick<br/>wall<br/>with one finger.",
                     "Wait for somebody to touch the same brick as you, but with two fingers.",
                     "Ask, 'How much does a brick weigh?' then wait for an answer.",
                     "Introduce yourselves. Yay!",
