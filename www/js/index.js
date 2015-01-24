@@ -45,14 +45,12 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-		
-		$("div#interactionRecord").text(localStorage["interactions"]);
     },
     giveTask: function() {
         window.location = "task.html";
     },
-	clearLocalStorage: function() {
-		localStorage["interactions"] = "";
+	viewPastInteractions: function() {
+		window.location = "viewInteractions.html";
 	}
 };
 
