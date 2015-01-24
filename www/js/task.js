@@ -5,7 +5,8 @@ var task = {
 		var level = 0;
 		currentMessage = 0;
 		$.getJSON("json/tasks.json", function(taskJson) {
-			currentInstructions = taskJson[level].instructions[task.getRandomInt(0,1)];
+			var messageCount = Object.keys(taskJson[level].instructions).length;
+			currentInstructions = taskJson[level].instructions[task.getRandomInt(0,messageCount)];
 			$("div#task_field").text(currentInstructions.messages[currentMessage]);
 		});
 	},
