@@ -48,19 +48,20 @@ var app = {
     },
     giveTask: function() {
 		console.log("Testing please!");
-        var task=prompt("Give Task","");
-        if (task!=null)
-        {
-            if (task == "")
-            {
-                alert("Task can't be empty!");
-            }
-            else
-            {
-                
-            }
-        }
-        
+        window.location = "task.html";
+		// var task=prompt("Give Task","");
+		//         if (task!=null)
+		//         {
+		//             if (task == "")
+		//             {
+		//                 alert("Task can't be empty!");
+		//             }
+		//             else
+		//             {
+		//
+		//             }
+		//         }
+		//
     }
 };
 
