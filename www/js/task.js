@@ -2,7 +2,7 @@ var task = {
     // Application Constructor
     initialize: function() {
 		$.getJSON("json/tasks.json", function(taskJson) {
-			$("div#task_field").text(taskJson[0].messages[task.getRandomInt(0,1)]);
+			$("div#task_field").text(taskJson[0].instructions[task.getRandomInt(0,1)].messages[0]);
 		});
 	},
 	getRandomInt: function(min, max) {

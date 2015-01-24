@@ -1,9 +1,25 @@
 [
     {
-        "level": 1,
-        "messages": [
-            "Touch a brick wall with one finger.",
-            "Hop on one leg."
-        ]
+        "instructions": [
+            {
+                "messages": [
+                    "Touch a brick wall with one finger.",
+                    "Wait for somebody to touch the same brick as you, but with two fingers.",
+                    "Ask, 'How much does a brick weigh?' then wait for an answer.",
+                    "Introduce yourselves. Yay!",
+                    "Talk about things that weigh the same as a brick!"
+                ]
+            },
+            {
+                "messages": [
+                    "Touch a brick wall with two fingers.",
+                    "Find somebody doing the same and go touch their brick, with two fingers.",
+                    "Wait for the other person to ask a question, then say, 'Enough to break the ice!'",
+                    "Introduce yourselves. Yay!",
+                    "Talk about things that weigh the same as a brick!"
+                ]
+            }
+        ],
+        "level": 1
     }
 ]
