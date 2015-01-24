@@ -50,7 +50,10 @@ var app = {
     },
     giveTask: function() {
         window.location = "task.html";
-    }
+    },
+	clearLocalStorage: function() {
+		localStorage["interactions"] = "";
+	}
 };
 
 app.initialize();

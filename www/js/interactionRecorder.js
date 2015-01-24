@@ -5,7 +5,13 @@ var interactionRecorder = {
 		var interaction = $("input[name='interaction']").val();
 		
 		var jsonObject = {"date":new Date(), "interaction":interaction};
-		var array = [jsonObject];
+		var array;
+		if (localStorage["interactions"]) {
+			var array = JSON.parse(localStorage["interactions"]);
+		} else {
+			var array = [];
+		}
+		array.push(jsonObject);
 		
 		localStorage["interactions"] = JSON.stringify(array);
 		console.log(interaction);
