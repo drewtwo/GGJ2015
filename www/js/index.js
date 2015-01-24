@@ -47,21 +47,7 @@ var app = {
         console.log('Received Event: ' + id);
     },
     giveTask: function() {
-		console.log("Testing please!");
         window.location = "task.html";
-		// var task=prompt("Give Task","");
-		//         if (task!=null)
-		//         {
-		//             if (task == "")
-		//             {
-		//                 alert("Task can't be empty!");
-		//             }
-		//             else
-		//             {
-		//
-		//             }
-		//         }
-		//
     }
 };
 
