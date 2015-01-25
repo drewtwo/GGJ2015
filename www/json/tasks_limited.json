@@ -1,0 +1,16 @@
+[
+    {
+        "instructions": [
+            {
+                "messages": [
+                    "1. You're a wild west cowpoke! Saunter into the saloon! (Or just saunter around.)",
+                    "2. Find another cowpoke and prepare yourselves for a duel. (Put your hand on your hip over an imaginary holster.)",
+                    "3. Count to three together out loud, and on three, 'draw', and 'shoot' the other person a compliment.",
+                    "4. Introduce yourselves! Yay!",
+                    "5. Say what you would like most about being a cowpoke."
+                ]
+            }
+        ],
+        "level": 1
+    }
+]

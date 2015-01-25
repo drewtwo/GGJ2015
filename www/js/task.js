@@ -5,7 +5,7 @@ var task = {
     initialize: function() {
 		var level = 0;
 		currentMessageIndex = 0;
-		$.getJSON("json/tasks.json", function(taskJson) {
+		$.getJSON("json/tasks_limited.json", function(taskJson) {
 			var instructionsCount = Object.keys(taskJson[level].instructions).length - 1;
 			currentInstructions = taskJson[level].instructions[task.getRandomInt(0,instructionsCount)];
 			messageCount = Object.keys(currentInstructions.messages).length - 1;
