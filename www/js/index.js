@@ -52,6 +52,10 @@ var app = {
     },
 	viewPastInteractions: function() {
 		window.location = "viewInteractions.html";
+	},
+	clearData: function() {
+		localStorage["interactions"] = "";
+		window.location = "index.html"
 	}
 };
 
