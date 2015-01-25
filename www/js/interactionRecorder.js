@@ -36,14 +36,14 @@ var interactionRecorder = {
 		window.location = "index.html";
 	},
 	onSuccess: function(imageData) {
-		console.log("WHAT IS GOING ON? ");
-		this.saveInteractionWithURI(imageData);
+	    // console.log("onSuccess " + imageData);
+		interactionRecorder.saveInteractionWithURI(imageData);
 	},
 	 onFail: function(message) {
 		alert('Failed because: ' + message);
 	},
 	cameraThenSave: function() {
-		console.log("WHAT IS GOING ON? ");
+		console.log("cameraThenSave");
 		navigator.camera.getPicture(this.onSuccess, this.onFail, { 
 			quality: 50,
 			destinationType: Camera.DestinationType.DATA_URL,
