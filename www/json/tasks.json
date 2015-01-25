@@ -3,7 +3,7 @@
         "instructions": [
             {
                 "messages": [
-                    "Touch a brick<br/>wall<br/>with one finger.",
+                    "Touch a brick wall with one finger.",
                     "Wait for somebody to touch the same brick as you, but with two fingers.",
                     "Ask, 'How much does a brick weigh?' then wait for an answer.",
                     "Introduce yourselves. Yay!",
@@ -12,14 +12,82 @@
             },
             {
                 "messages": [
-                    "Touch a brick wall with two fingers.",
+                    "Touch a brick wall with one finger.",
                     "Find somebody doing the same and go touch their brick, with two fingers.",
                     "Wait for the other person to ask a question, then say, 'Enough to break the ice!'",
                     "Introduce yourselves. Yay!",
                     "Talk about things that weigh the same as a brick!"
                 ]
+            },
+            {
+                "messages": [
+                    "1.  Hop on one leg.",
+                    "2. Hop over to a stranger hopping on one leg.",
+                    "3. Do a hopping high five in the air!",
+                    "4. Introduce yourselves. Yay!",
+                    "5. Talk about hopping things -- frogs, flamingos, hoppers, hops, etc."
+                ],
+                "players": 2
+            },
+            {
+                "messages": [
+                    "1. Put your hand on your chin, as if pondering.",
+                    "2. Ponder the people around you who are pondering, and ponder over to one.",
+                    "3. Touch your earlobe with one finger, and see if they do the same.",
+                    "4. Shake hands, and introduce yourselves. Yay!",
+                    "5. Come up with a secret handshake together as if you were secret agents, <br/>and take a picture of your hands as you execute it."
+                ],
+                "players": 2
+            },
+            {
+                "messages": [
+                    "1. You're on the moon! Move in s l o w   m o t i o n .",
+                    "2. F i n d   a   f e l l o w   a s t r o n a u t .",
+                    "3. S  p  a  c  e           h  i  g  h           f  i  v  e  !",
+                    "4. Return to Earth. Introduce yourselves and share your favorite planet. Yay!",
+                    "5. Strike a spaceman pose and take pictures of each other."
+                ],
+                "players": 2
+            },
+            {
+                "messages": [
+                    "1. Clasp your hands above your head and shake them, as if celebrating.<br/>2. Find a fellow celebrator; now shake your hands in front of you, as if shaking a soda or champagne.<br/>3. When you get close, 'spray' the other player and make a 'kssshhhhhhh!' sound.<br/>4. Now that you're 'sopping wet', introduce yourselves and share what your favorite bubbly drink is. Yay!<br/>5. Take a picture of each other 'spraying' the other's camera."
+                ],
+                "players": 2
+            },
+            {
+                "messages": [
+                    "1. Look at your wrist to check the time. (Make sure it's a wrist without a watch.)",
+                    "2. Find another timeless person.",
+                    "3. Compliment them on their 'watch'!",
+                    "4. Introduce yourselves and share your favorite time of day.",
+                    "5. Take a picture of your wrists.(Draw watches on them if you like!)"
+                ],
+                "players": 2
             }
         ],
         "level": 1
+    },
+    {
+        "instructions": {
+            "messages": [
+                "1. Spread your arms as if stretching, but leave them out at shoulder height.<br/>2. Tiptoe, as if balancing carefully, as you look for other players.<br/>3. Whoosh into a V-formation and swoop around the area!<br/>4. Introduce yourselves to one another. Yay!<br/>5. Get someone to take a picture of your flock/squadron."
+            ],
+            "players": 2
+        },
+        "level": 2
+    },
+    {
+        "instructions": {
+            "messages": [
+                "1. Act like you're flipping a coin. Flip it with your thumb into the air, watch it go up, watch it fall down again into your hand. Keep doing this!",
+                "2. Watch for other coin flippers. If you think you see one, wave with your phone hand and see if they do the same!",
+                "3. Introduce yourselves to one another and figure out what your favorite standard currency coins are.",
+                "4. Pool as many of those as you happen to find around, and donate them to a nearby agreed-upon good cause. A homeless person, a charity, a small child.",
+                "5. Take a picture together with said good cause. Yay!"
+            ],
+            "players": 2
+        },
+        "level": 3
     }
 ]

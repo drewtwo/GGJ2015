@@ -19,23 +19,10 @@ var task = {
 	nextTask: function() {
 		currentMessageIndex++;
 		if (currentMessageIndex > messageCount) {
-			navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-			    destinationType: Camera.DestinationType.DATA_URL,
-			    saveToPhotoAlbum: true
-			});
-
-			function onSuccess(imageData) {
-			    var image = document.getElementById('myImage');
-			    image.src = "data:image/jpeg;base64," + imageData;
-			}
-
-			function onFail(message) {
-			    alert('Failed because: ' + message);
-			}
-
-
+			console.log("Testing messageCount");
 			window.location = "interactionRecorder.html";
 		} else {
+			console.log("next page");
 			var currentMessage = currentInstructions.messages[currentMessageIndex];
 			$("div#task_field").html(currentMessage);
 		}
