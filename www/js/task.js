@@ -19,23 +19,25 @@ var task = {
 	nextTask: function() {
 		currentMessageIndex++;
 		if (currentMessageIndex > messageCount) {
+			console.log("Testing messageCount");
 			navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 			    destinationType: Camera.DestinationType.DATA_URL,
 			    saveToPhotoAlbum: true
 			});
 
 			function onSuccess(imageData) {
+				console.log("success?");
 			    var image = document.getElementById('myImage');
 			    image.src = "data:image/jpeg;base64," + imageData;
+				window.location = "interactionRecorder.html";
 			}
 
 			function onFail(message) {
+				console.log("fail?");
 			    alert('Failed because: ' + message);
 			}
-
-
-			window.location = "interactionRecorder.html";
 		} else {
+			console.log("next page");
 			var currentMessage = currentInstructions.messages[currentMessageIndex];
 			$("div#task_field").html(currentMessage);
 		}
