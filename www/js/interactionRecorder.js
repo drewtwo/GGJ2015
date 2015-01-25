@@ -37,10 +37,7 @@ var interactionRecorder = {
 	},
 	onSuccess: function(imageData) {
 		console.log("WHAT IS GOING ON? ");
-	    var image = document.getElementById('myImage');
-	    image.src = "data:image/jpeg;base64," + imageData;
-	    console.log("WHAT IS GOING ON? " + image.src);
-		this.saveInteractionWithURI(dataURL);
+		this.saveInteractionWithURI(imageData);
 	},
 	 onFail: function(message) {
 		alert('Failed because: ' + message);
